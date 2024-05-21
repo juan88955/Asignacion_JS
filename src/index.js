@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 const mongoUri = process.env.MONGODB_URI;
 try {
-  mongoose.connect(mongoUri);
+  mongoose.connect("mongodb+srv://juanforero66:S2MS5uSUT2GMSjof@cluster0.qiqw2yu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
   console.log("Conectado a MongoDB");
 } catch (error) {
   console.error("Error de conexión", error);
